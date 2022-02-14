@@ -16,8 +16,9 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Table(name = "Postagens")
 public class Postagens {
 
-	@Id
+	
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Id
 	private Long id;
 	@NotBlank
 	private String titulo;
