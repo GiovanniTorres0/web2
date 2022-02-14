@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+
+<head></head>
+
+<body>
+	<h1 th:each="postagem : ${postagens}">
+		<span th:text="${postagem.autor}"></span>
+		<span th:text="${postagem.titulo}"></span>
+		<span th:text="${postagem.texto}"></span>
+	</h1>
+</body>
+
+</html>
